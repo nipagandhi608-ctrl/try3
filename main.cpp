@@ -27,10 +27,7 @@ int calculate_and_report() {
     double invalid_area = engine.calculate_circle_area(-2.0);
     std::cout << "Area (r=-2.0): " << invalid_area << std::endl;
     
-    // Another calculation
-    double result = engine.power_calculation(2.0, 10);
-    std::cout << "Power (2^10): " << result << std::endl;
-
+    
     app_logger.log(LOG_INFO, "Application finished.");
 
     return 0;
